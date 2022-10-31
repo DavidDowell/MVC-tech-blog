@@ -11,22 +11,28 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">The Tech Blog</a>
-      </h1>
-      <nav>
+    <header class="mb-4 pb-3 d-flex align-items-start flex-column bd-highlight" style="height: 180px;">
+      <nav class="mb-auto p-2 bd-highlight flex-row h4">
+        <a class="mr-3 text-decoration-none text-light" href="/">Home</a>
+        <a class="mr-3 text-decoration-none text-light" href="/dashboard">Dashboard</a>
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">logout</button>
+        <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a class="mr-3 text-decoration-none text-light" href="/login">Login</a>
         {{/if}}
       </nav>
+
+       <h1 class="p-2 bd-highlight">
+        <a href="/" class="text-decoration-none text-dark bg-light p-3 rounded-pill">
+        The Tech Blog</a>
+      </h1>
+
     </header>
+
     <main>
       {{{ body }}}
     </main>
-    <footer>
+    <footer class="mt-3 ml-3">
       Thanks for visiting!
     </footer>
   </div>
