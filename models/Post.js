@@ -18,9 +18,6 @@ Post.init(
         post_content: {
             type: DataTypes.STRING,
             allowNull: false,
-            validate: {
-                isContent: true
-            }
         },
         user_id: {
             type: DataTypes.INTEGER,
