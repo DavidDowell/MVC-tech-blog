@@ -1,4 +1,24 @@
-<div class="meta">
-    <a class="text-decoration-none text-light" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+<article class="post m-2 ml-0 border border-success">
+  <div class="title d-flex justify-content-between text-light pl-1 pr-1">
+    <a
+      class="text-decoration-none text-light h3"
+      href="/dashboard"
+      target="_blank"
+    >{{title}}</a>
+    Posted by
+    {{user.username}}
+    on
+    {{format_date created_at}}
+  </div>
+
+  <div>
+    {{post_content}}
+  </div>
+
+  <div class="meta">
+    <a
+      class="text-decoration-none text-dark"
+      href="/post/{{id}}"
+    >{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
 </article>
