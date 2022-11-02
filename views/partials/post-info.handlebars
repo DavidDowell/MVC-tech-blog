@@ -1,8 +1,8 @@
-<article class="post m-2 ml-0 border border-success">
+<article class="post m-2 ml-0 border border-success" style="height: 150px">
   <div class="title d-flex justify-content-between text-light pl-1 pr-1">
     <a
       class="text-decoration-none text-light h3"
-      href="/dashboard"
+      href= "/dashboard/comments/{{id}}"
       target="_blank"
     >{{title}}</a>
     Posted by
@@ -11,14 +11,14 @@
     {{format_date created_at}}
   </div>
 
-  <div>
+  <div class="ml-2">
     {{post_content}}
   </div>
 
-  <div class="meta">
+  <div class="meta d-flex justify-content-end mt-5 pr-2">
     <a
       class="text-decoration-none text-dark"
-      href="/post/{{id}}"
+      href="/posts/{{id}}"
     >{{comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
 </article>
