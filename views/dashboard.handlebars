@@ -25,9 +25,9 @@
     <ul class="post-list d-flex flex-wrap justify-content-center">
         {{#each posts as |post|}}
         <li class="col-10 m-2">
-        {{> post-info post}}
-            <div class="containter col-12 prev-post p-2 m-2 d-flex">
+            <div class="containter col-12 prev-post p-2 m-2 d-flex align-items-center">
                 <a href="/dashboard/edit/{{post.id}}" class="edit-link text-decoration-none text-light h4 col-10 p-1">{{post.title}}</a>
+                {{> post-info post}}
             </div>
         </li>
         {{/each}}
