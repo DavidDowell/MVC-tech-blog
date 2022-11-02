@@ -16,22 +16,22 @@
 
     </div>
 
-    <div class="d-flex justify-content-center mt-2">
+    {{!-- <div class="d-flex justify-content-center mt-2">
         <button class="new-post text-light rounded h3 p-1" type="submit">+ New Post</button>
-    </div>
-
-    {{#if posts.length}}
+    </div> --}}
+        {{#if posts.length}}
     <section>
-    <h2>Your Posts</h2>
-    <ol>
+    <h2 class="ml-3 mt-4">Your Posts</h2>
+    <ul class="post-list d-flex flex-wrap justify-content-center">
         {{#each posts as |post|}}
-        <li>
+        <li class="col-10 m-2">
         {{> post-info post}}
-        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            <div class="containter col-12 prev-post p-2 m-2 d-flex">
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link text-decoration-none text-light h4 col-10 p-1">{{post.title}}</a>
+            </div>
         </li>
         {{/each}}
-    </ol>
+    </ul>
     </section>
-    {{/if}}
-
+        {{/if}}
 <script src="/javascript/add-post.js"></script>

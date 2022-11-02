@@ -17,3 +17,12 @@ header {
 .new-post {
     background-color: darkslateblue;
 }
+
+.post-list {
+    list-style: none;
+}
+
+.prev-post {
+    background-color: #501376;
+    border-radius: 0.5rem;
+}
