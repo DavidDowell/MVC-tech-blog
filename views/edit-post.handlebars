@@ -33,6 +33,18 @@
 
 </div>
 
+<form class="comment-form m-2 d-flex flex-wrap justify-content-center">
+  <div class="col-12">
+    <textarea class="col-12 border-dark" name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button class="text-light bg-dark border-light rounded" type="submit">Add Comment</button>
+  </div>
+</form>
+
+{{> comments post.comments}}
+
 <script src="/javascript/edit-post.js"></script>
-<script src="/javascript/delete-post.js"></script> 
-{{!-- <script src="/javascript/comment.js"></script> --}}
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
