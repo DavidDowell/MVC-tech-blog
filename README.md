@@ -25,4 +25,12 @@ When the user is finsihed with their experience, they can select log out in the 
 
 ## Technology
 
+* CSS
+* JavaScript
+* Node.js
+* Handlebars
+* Heroku
 
+## Application and GitHub URL
+
+https://github.com/DavidDowell/MVC-tech-blog
